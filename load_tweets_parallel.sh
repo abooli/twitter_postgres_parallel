@@ -18,6 +18,6 @@ echo "$files" | time parallel python3 -u load_tweets.py --db=postgresql://postgr
 echo '================================================================================'
 echo 'load pg_normalized_batch'
 echo '================================================================================'
-echo "$files" | time parallel python3 -u load_tweets.py --db=postgresql://postgres:pass@localhost:1178/ --inputs
+# echo "$files" | time parallel python3 -u load_tweets.py --db=postgresql://postgres:pass@localhost:1178/ --inputs
 # echo "$files" | time parallel python3 -u load_tweets_batch.py --db=postgresql://postgres:pass@localhost:1178/ --inputs
 # echo "data/geoTwitter21-01-10.zip" | time parallel python3 -u load_tweets_batch.py --db=postgresql://postgres:pass@localhost:1178/ --inputs
